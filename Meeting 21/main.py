@@ -5,7 +5,7 @@ from math   import hypot
 print(math.hypot(3, 4))  
 
 cap = cv2.VideoCapture(0)
-nose_img = cv2.imread("Meeting 21/nose.png", cv2.IMREAD_UNCHANGED)
+nose_img = cv2.imread(r"C:/Users/nda/Documents/GitHub/aidev/Meeting 21/pig_nose.png", cv2.IMREAD_UNCHANGED)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 mpDraw = mp.solutions.drawing_utils
