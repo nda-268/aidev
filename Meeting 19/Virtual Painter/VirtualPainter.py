@@ -65,9 +65,9 @@ while True:
                 cv2.line(imgCanvas, (xp, yp), (x1, y1), drawColor, brushThickness)
             xp, yp = x1, y1
     frameGray = cv2.cvtColor(imgCanvas, cv2.COLOR_BGR2GRAY)
-    _, imgInv = cv2.threshold(frameGray, 50, 255, cv2.THRESH_BINARY_INV)
-    imgInv = cv2.cvtColor(imgInv, cv2.COLOR_GRAY2BGR)
-    frame = cv2.bitwise_and(frame, imgInv)
+    _, frameInvers = cv2.threshold(frameGray, 50, 255, cv2.THRESH_BINARY_INV)
+    frameInvers = cv2.cvtColor(frameInvers, cv2.COLOR_GRAY2BGR)
+    frame = cv2.bitwise_and(frame, frameInvers)
     frame = cv2.bitwise_or(frame, imgCanvas)
     frame[0:125, 0:1280] = header
     frame = cv2.resize(frame, (1280, 720))
