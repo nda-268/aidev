@@ -1,16 +1,17 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "editor.suggestOnTriggerCharacters": true,
     "editor.quickSuggestions": {
         "other": "on",
-        "comments": "on",
+        "comments": "off",
         "strings": "on"
     },
-    "editor.suggestOnTriggerCharacters": true,
-    "python.analysis.aiCodeActions": {
-
-        "implementAbstractClasses": true,
-        "generateSymbol": true,
-        "convertFormatString": true
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "off",
+            "strings": "on"
+        }
     },
-    "python.analysis.indexing": true
+    "python.languageServer": "Pylance"
 }
