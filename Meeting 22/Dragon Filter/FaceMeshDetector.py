@@ -307,5 +307,3 @@ class FaceMesh():
             pass
             
         return annotated_image
-
-
